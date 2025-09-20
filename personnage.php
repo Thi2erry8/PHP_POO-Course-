@@ -2,11 +2,17 @@
      class Personnage{
            public $vie = 20;
            public $atk = 20;
-           public $nom;          
+           private $nom;          
 
            public function __construct($nom)
            {
              $this->nom = $nom;
+           }
+
+           public function getNom(){
+
+              return $this->nom;
+
            }
 
            public function guerir($i){
