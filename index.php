@@ -1,8 +1,13 @@
 <?php
-     require "personnage.php";
-     $merlin = new Personnage("Merlin");
+     
+     require 'form.php';
 
-     $merlin->guerir(5);
+     $form = new Form(array(
+          'username' => 'Roger'
+     ));
+     echo $form -> input('username');
 
-     var_dump($merlin)
+     echo $form -> input('password');
+
+     echo $form -> submit();
 ?>
