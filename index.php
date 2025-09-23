@@ -1,5 +1,7 @@
 <?php
      require 'form.php';
+     require 'text.php';
+
      $form = new Form($_POST);
 
 ?>
