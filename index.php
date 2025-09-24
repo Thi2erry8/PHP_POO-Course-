@@ -1,7 +1,8 @@
 <?php
      require 'form.php';
      require 'text.php';
-
+     require 'Personnage.php';
+     require 'Archer.php';
      $form = new Form($_POST);
 
 ?>
