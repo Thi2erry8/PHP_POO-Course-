@@ -1,9 +1,7 @@
 <?php
-     require 'form.php';
-     require 'text.php';
-     require 'Personnage.php';
-     require 'Archer.php';
-     $form = new Form($_POST);
+     require 'class/Autoloader.php';
+     Autoloader::register();
+     $form = new form($_POST)
 
 ?>
  <form action="#" method="post">

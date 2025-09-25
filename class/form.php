@@ -4,7 +4,7 @@
     *class Form
     *Permet de generer un formulaire rapidement et simplement
     */
-     class Form{
+     class form{
            /*
              *@Var array donnees utilisees par le formulaire
            */
