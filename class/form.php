@@ -1,5 +1,5 @@
 <?php
-
+   
     /*
     *class Form
     *Permet de generer un formulaire rapidement et simplement
