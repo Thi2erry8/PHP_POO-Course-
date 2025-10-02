@@ -1,7 +1,7 @@
 <?php
 
 
-     require '../app/Autoloader.php';
+     require_once __DIR__ . '/../app/Autoloader.php';
      App\Autoloader::register();
      
      if(isset($_GET['p'])){
