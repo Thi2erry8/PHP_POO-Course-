@@ -10,6 +10,8 @@
         $p='home';
      }
 
+     $db = new App\Database('blog');
+
      ob_start();
      if($p === 'home'){
         require '../pages/home.php';
