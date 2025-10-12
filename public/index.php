@@ -10,7 +10,7 @@
         $p='home';
      }
 
-     $db = new App\Database('blog');
+   
 
      ob_start();
      if($p === 'home'){
@@ -28,5 +28,3 @@
          background: #aeaeaeff;
         }
 </style>
-
-<?= $_GET['p'] ?>

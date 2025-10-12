@@ -1,8 +1,26 @@
 <?php
 
      namespace App\Table;
+ 
+    use App\App;
 
-     class Article{
+     class Article extends Table{
+          
+          public static function getLast(){
+               return App::getDatabase()->query
+               ("SELECT articles.id, articles.titre, articles.contenu, categories.titre as categorie
+               FROM articles
+               LEFT JOIN categories
+               ON categorie_id = categories.id", __CLASS__);
+          }
+          
+          public static function LastByCategory(){
+               return App::getDatabase()->query
+               ("SELECT articles.id, articles.titre, articles.contenu, categories.titre as categorie
+               FROM articles
+               LEFT JOIN categories
+               ON categorie_id = categories.id", __CLASS__);
+          }
 
           public function __get($key){
                $method = 'get' . ucfirst($key);
