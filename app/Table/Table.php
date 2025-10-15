@@ -16,7 +16,17 @@
             }
             return static::$table;
          }
+
+         public static function query($statement, $attributes = null){
+             if($attributes){
+               return App::getDatabase()->prepare($statement, $attributes , get_called_class());
+             }
+             else {
+                 return App::getDatabase()->query($statement, get_called_class());
+             }
          
+          }   
+
          public static function find($id){
             return App::getDatabase()->prepare
             ("SELECT *
